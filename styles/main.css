@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+*, ::after, ::before{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    color: #4f4f4f;
+    margin: 0;
+    padding: 0;
+    background-color: #fbfbfb;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+header{
+    margin: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    float: left;
+}
+
+.top-nav-wrapper{
+    float: right;
+
+}
+
+nav {
+    height: 100%;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item{
+    margin-left: 1em;
+    list-style: none;
+    font-weight: bold;
+
+}
+
+.nav-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container{
+    max-width: 1140px;
+    padding: 0 0.75rem;
+    margin: 1em auto;
+    overflow: hidden;
+}
+
+
+main{
+}
+
+section{
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25),  0 3px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+section + section{
+
+    margin: 3rem 0px;
+    padding: 3rem;
+}
+
+.socials .menu-title{
+    display: none;
+}
+
+.fab{
+    font-size: x-large;
+}
+
+#intro{
+    margin: 0px 0px 3rem 0px;
+    padding: 3rem;
+    color: #e0e0e0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    justify-items: center;
+    backdrop-filter: blur(2px);
+    background-image: linear-gradient(to top, rgba(7, 3, 20, 0.774), rgba(0, 0, 93, 0.73)),
+    url('../assets/images/header-background.jpg');
+    background-size: cover;
+}
+
+#intro h1{
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+.avatar{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25),  0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    padding: 0.3rem;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.5rem;
+    max-width: 200px;
+}
+
+.call-to-action{
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;;
+}
+
+button {
+  background-color: #00000000; /* Green */
+  border: none;
+  color: #e0e0e0;; 
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.cv-btn { 
+  border: 2px solid #4CAF50;
+}
+
+.cv-btn:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.hire-me-btn {
+  border: 2px solid #008CBA;
+}
+
+.hire-me-btn:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.footer{
+    display:flex;
+    justify-content: space-between;
+    margin: 1em auto;
+    padding: 3em;
+}
+
