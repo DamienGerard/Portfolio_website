@@ -128,7 +128,7 @@ button {
   background-color: #00000000; /* Green */
   border: none;
   color: #e0e0e0;; 
-  padding: 16px 32px;
+  /*padding: 1em 2em;*/
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -136,6 +136,8 @@ button {
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
+  min-height: 5em;
+  min-width: 10rem;
 }
 
 .cv-btn { 
@@ -184,6 +186,41 @@ p + p{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
+}
+
+.timeline{
+    display: grid;
+    grid-template-columns: 1fr 100fr;
+    grid-gap: 1rem;
+}
+
+.time-bullet{
+    border-radius: 100%;
+    width: 1.5em;
+    height: 1.5em;
+    border: 5px solid;
+    border-color: #0dcaf0;
+    margin: 0.2em 0;
+}
+
+.vertical-line{
+    width: 1px;
+    background-color: #00000070;
+    height: 80%;
+    margin: 5px auto;
+}
+
+.time-card-where{
+    color: #757575;
+    font-size: 0.85rem;
+}
+
+.time-card-date{
+    color:#fff;
+    background-color: lightslategrey;
+    border-radius: 1.5rem;
+    padding: 0 0.8rem;
+    width: max-content;
 }
 
 .footer{
