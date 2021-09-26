@@ -72,6 +72,9 @@ section{
     background-color: #fff;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25),  0 3px 10px 0 rgba(0, 0, 0, 0.2);
 }
+section h2{
+    font-weight: inherit;
+}
 
 section + section{
 
@@ -153,6 +156,36 @@ button {
   color: white;
 }
 
+#about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+p + p{
+    margin-top: 1rem;
+}
+
+.bio-info{
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-gap: 0.5rem;
+}
+
+.bio-key{
+    display: flex;
+    align-items: center;
+    gap:inherit;
+    margin-bottom: 1em;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
 .footer{
     display:flex;
     justify-content: space-between;
@@ -160,3 +193,19 @@ button {
     padding: 3em;
 }
 
+
+
+@media only screen and (max-width: 768px) {
+    #about{
+        grid-template-columns: 1fr;
+        grid-gap: 0.5rem;
+    }
+
+    .about-me{
+        margin-bottom: 2rem;
+    }
+
+    .skills{
+        grid-template-columns: 1fr;
+    }
+} 
