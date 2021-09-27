@@ -46,7 +46,7 @@ nav ul{
 }
 
 .nav-item{
-    margin-left: 1em;
+    margin: 0 0.5rem;
     list-style: none;
     font-weight: bold;
 
