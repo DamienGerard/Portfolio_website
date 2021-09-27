@@ -64,10 +64,6 @@ nav ul{
     overflow: hidden;
 }
 
-
-main{
-}
-
 section{
     background-color: #fff;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25),  0 3px 10px 0 rgba(0, 0, 0, 0.2);
@@ -224,13 +220,19 @@ p + p{
 }
 
 .footer{
-    display:flex;
-    justify-content: space-between;
-    margin: 1em auto;
-    padding: 3em;
+    display:grid;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 0 3em 1em 3em;
+    text-align: center;
 }
 
-
+.footer ul{
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom:1em;
+}
 
 @media only screen and (max-width: 768px) {
     #about{
