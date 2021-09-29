@@ -7,6 +7,7 @@
   <script src="https://kit.fontawesome.com/e279e577b6.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/progress_bar.css">
+  <link rel="stylesheet" href="styles/collapsible.css">
   <title>Damien GERARD</title>
 </head>
 <body>
@@ -27,6 +28,7 @@
     </div>
   </header>
   <main class="container">
+
     <section id="intro">
       <img src="assets/images/avatar.png" alt="avatar image" class="avatar">
       <h1>Damien Gerard</h1>
@@ -46,154 +48,181 @@
         <button class="hire-me-btn"><a href="#contact" style="color: inherit; text-decoration: none;">Hire me</a></button>
       </div>
     </section>
-    <section id="about">
-      <div class="about-me">
-        <h2>About Me</h2>
-        <p>I am a highly motivated Computer Science student with a strong foundation in computer programming and software development techniques, with proficiency in a wide variety of programming languages from JavaScript to C++. I am eagerly willing to learn more and sharpen already acquired skills. </p>
-        <p>I am passionate about theoretical computer science, computer security and machine learning. I am currently looking for an opportunity to acquire more experience in a software development team.</p>
-      </div>
-      <div class="bio">
-        <h2>Bio</h2>
-        <div class="bio-info">
-          <div class="bio-key"><i class="far fa-calendar-alt"></i><span class="menu-title">Age</span></div><div class="bio-content">22</div>
-          <div class="bio-key"><i class="far fa-envelope"></i><span class="menu-title">Email</span></div><div class="bio-content">damien.gerard007@gmail.com</div>
-          <div class="bio-key"><i class="fas fa-phone"></i><span class="menu-title">Phone</span></div><div class="bio-content">+230 5710 5625</div>
-          <div class="bio-key"><i class="fas fa-map-marker-alt"></i><span class="menu-title">Address</span></div><div class="bio-content">Centre de Flacq, Flacq, Mauritius</div>
-        </div>
-      </div>
-    </section>
-    <section id="skills">
-      <h2>Professional Skills</h2>
-      <div class="skills">
-        <div class="skill">
-          <h4 class="skill-name">Java</h4>
-          <div class="meter">
-            <span style="width: 85%"></span>
+    
+    <section class="wrap-collabsible wrap-collabsible-section">
+      <input name="personal_info" id="personal_info" class="toggle" type="checkbox"> <label for="personal_info" class="lbl-toggle">Personal Info</label>
+      <div class="collapsible-content">
+         <div  id="about" class="content-inner">
+          <div class="about-me">
+            <h2>About Me</h2>
+            <p>I am a highly motivated Computer Science student with a strong foundation in computer programming and software development techniques, with proficiency in a wide variety of programming languages from JavaScript to C++. I am eagerly willing to learn more and sharpen already acquired skills. </p>
+            <p>I am passionate about theoretical computer science, computer security and machine learning. I am currently looking for an opportunity to acquire more experience in a software development team.</p>
           </div>
-        </div>
-        <div class="skill">
-          <h4 class="skill-name">C#</h4>
-          <div class="meter">
-            <span style="width: 87%"></span>
-          </div>
-        </div>
-        <div class="skill">
-          <h4 class="skill-name">C++</h4>
-          <div class="meter">
-            <span style="width: 65%"></span>
-          </div>
-        </div>
-        <div class="skill">
-          <h4 class="skill-name">Python</h4>
-          <div class="meter">
-            <span style="width: 82%"></span>
-          </div>
-        </div>
-        <div class="skill">
-          <h4 class="skill-name">PHP</h4>
-          <div class="meter">
-            <span style="width: 70%"></span>
-          </div>
-        </div>
-        <div class="skill">
-          <h4 class="skill-name">HTML</h4>
-          <div class="meter">
-            <span style="width: 95%"></span>
-          </div>
-        </div>
-        <div class="skill">
-          <h4 class="skill-name">JavaScript</h4>
-          <div class="meter">
-            <span style="width: 90%"></span>
-          </div>
-        </div>
-        <div class="skill">
-          <h4 class="skill-name">CSS</h4>
-          <div class="meter">
-            <span style="width: 75%"></span>
-          </div>
-        </div>
-        <div class="skill">
-          <h4 class="skill-name">Flutter</h4>
-          <div class="meter">
-            <span style="width: 75%"></span>
-          </div>
-        </div>
-        <div class="skill">
-          <h4 class="skill-name">Dart</h4>
-          <div class="meter">
-            <span style="width: 85%"></span>
+          <div class="bio">
+            <h2>Bio</h2>
+            <div class="bio-info">
+              <div class="bio-key"><i class="far fa-calendar-alt"></i><span class="menu-title">Age</span></div><div class="bio-content">22</div>
+              <div class="bio-key"><i class="far fa-envelope"></i><span class="menu-title">Email</span></div><div class="bio-content">damien.gerard007@gmail.com</div>
+              <div class="bio-key"><i class="fas fa-phone"></i><span class="menu-title">Phone</span></div><div class="bio-content">+230 5710 5625</div>
+              <div class="bio-key"><i class="fas fa-map-marker-alt"></i><span class="menu-title">Address</span></div><div class="bio-content">Centre de Flacq, Flacq, Mauritius</div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <section id="experience">
-      <h2>Work Experience</h2>
-      <div class="timeline">
-        <div class="time-graphic">
-          <div class="time-bullet"></div>
-          <div class="vertical-line"></div>
-        </div>
-        <div class="time-card">
-          <h3>Software Developer <span class="time-card-where">at Ceridian</span></h3>
-          <div class="time-card-date">Sep 2021 – Present</div>
-          <div class="time-card-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius quidem nam ea cum atque veritatis iusto fuga accusamus sed ut!</div>
-        </div>
-        <div class="time-graphic">
-          <div class="time-bullet"></div>
-          <div class="vertical-line"></div>
-        </div>
-        <div class="time-card">
-          <h3>Webmaster <span class="time-card-where">at Linkeo</span></h3>
-          <div class="time-card-date">Feb 2021 – Mar 2021</div>
-          <div class="time-card-description">
-            <ul>
-              <li>Creation of websites in compliance with specifications and internal methods</li>
-              <li>Content integration</li>
-              <li>Modifications and adjustments, of contents and features of websites, when necessary</li>
-              <li>Modification of clients' websites in compliance with quality criteria and established deadlines.</li>
-            </ul>
-            <p>Technologies used: HTML5, Less CSS and JavaScript</p>
+   </section>
+    
+   <section class="wrap-collabsible wrap-collabsible-section">
+     <input name="professional_skills" id="professional_skills" class="toggle" type="checkbox"> <label for="professional_skills" class="lbl-toggle">Professional Skills</label>
+     <div class="collapsible-content">
+        <div  id="skills" class="content-inner">
+         
+          <div class="skills">
+            <div class="skill">
+              <h4 class="skill-name">Java</h4>
+              <div class="meter">
+                <span style="width: 85%"></span>
+              </div>
+            </div>
+            <div class="skill">
+              <h4 class="skill-name">C#</h4>
+              <div class="meter">
+                <span style="width: 87%"></span>
+              </div>
+            </div>
+            <div class="skill">
+              <h4 class="skill-name">C++</h4>
+              <div class="meter">
+                <span style="width: 65%"></span>
+              </div>
+            </div>
+            <div class="skill">
+              <h4 class="skill-name">Python</h4>
+              <div class="meter">
+                <span style="width: 82%"></span>
+              </div>
+            </div>
+            <div class="skill">
+              <h4 class="skill-name">PHP</h4>
+              <div class="meter">
+                <span style="width: 70%"></span>
+              </div>
+            </div>
+            <div class="skill">
+              <h4 class="skill-name">HTML</h4>
+              <div class="meter">
+                <span style="width: 95%"></span>
+              </div>
+            </div>
+            <div class="skill">
+              <h4 class="skill-name">JavaScript</h4>
+              <div class="meter">
+                <span style="width: 90%"></span>
+              </div>
+            </div>
+            <div class="skill">
+              <h4 class="skill-name">CSS</h4>
+              <div class="meter">
+                <span style="width: 75%"></span>
+              </div>
+            </div>
+            <div class="skill">
+              <h4 class="skill-name">Flutter</h4>
+              <div class="meter">
+                <span style="width: 75%"></span>
+              </div>
+            </div>
+            <div class="skill">
+              <h4 class="skill-name">Dart</h4>
+              <div class="meter">
+                <span style="width: 85%"></span>
+              </div>
+            </div>
+          </div>
+       </div>
+     </div>
+  </section>
+    
+  <section class="wrap-collabsible wrap-collabsible-section">
+    <input name="experiences" id="experiences" class="toggle" type="checkbox"> <label for="experiences" class="lbl-toggle">Work Experience</label>
+    <div class="collapsible-content">
+       <div  id="experience" class="content-inner">
+        <div class="timeline">
+          <div class="time-graphic">
+            <div class="time-bullet"></div>
+            <div class="vertical-line"></div>
+          </div>
+          <div class="time-card">
+            <h3>Software Developer <span class="time-card-where">at Ceridian</span></h3>
+            <div class="time-card-date">Sep 2021 – Present</div>
+            <div class="time-card-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius quidem nam ea cum atque veritatis iusto fuga accusamus sed ut!</div>
+          </div>
+          <div class="time-graphic">
+            <div class="time-bullet"></div>
+            <div class="vertical-line"></div>
+          </div>
+          <div class="time-card">
+            <h3>Webmaster <span class="time-card-where">at Linkeo</span></h3>
+            <div class="time-card-date">Feb 2021 – Mar 2021</div>
+            <div class="time-card-description">
+              <ul>
+                <li>Creation of websites in compliance with specifications and internal methods</li>
+                <li>Content integration</li>
+                <li>Modifications and adjustments, of contents and features of websites, when necessary</li>
+                <li>Modification of clients' websites in compliance with quality criteria and established deadlines.</li>
+              </ul>
+              <p>Technologies used: HTML5, Less CSS and JavaScript</p>
+            </div>
+          </div>
+          <div class="time-graphic">
+            <div class="time-bullet"></div>
+            <div class="vertical-line"></div>
+          </div>
+          <div class="time-card">
+            <h3>Full Stack Web Developer <span class="time-card-where">at ORION CONSULTING PRIVATE LTD</span></h3>
+            <div class="time-card-date">Jun 2020 – Aug 2020</div>
+            <div class="time-card-description">
+              <ul>
+                <li>Contributed to the development of a web service that aims to provide an efficient and well-organised process of sharing files between teachers and students.</li>
+                <li>Used Firebase with Node.js to implement a RESTful API that handles back-end requests.</li>
+                <li> Implemented authentication features using Firebase.</li>
+                <li>Worked on the the front-end using Vue.js.</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="time-graphic">
-          <div class="time-bullet"></div>
-          <div class="vertical-line"></div>
-        </div>
-        <div class="time-card">
-          <h3>Full Stack Web Developer <span class="time-card-where">at ORION CONSULTING PRIVATE LTD</span></h3>
-          <div class="time-card-date">Jun 2020 – Aug 2020</div>
-          <div class="time-card-description">
-            <ul>
-              <li>Contributed to the development of a web service that aims to provide an efficient and well-organised process of sharing files between teachers and students.</li>
-              <li>Used Firebase with Node.js to implement a RESTful API that handles back-end requests.</li>
-              <li> Implemented authentication features using Firebase.</li>
-              <li>Worked on the the front-end using Vue.js.</li>
-            </ul>
+      </div>
+    </div>
+ </section>
+    
+ <section class="wrap-collabsible wrap-collabsible-section">
+   <input name="edu" id="edu" class="toggle" type="checkbox"> <label for="edu" class="lbl-toggle">Education</label>
+   <div class="collapsible-content">
+      <div  id="education" class="content-inner">
+        <div class="timeline">
+          <div class="time-graphic">
+            <div class="time-bullet"></div>
+            <div class="vertical-line"></div>
+          </div>
+          <div class="time-card">
+            <h3>Bachelor of Science - BSc(Hons)Computer Science <span class="time-card-where">at University of Mauritius</span></h3>
+            <div class="time-card-date">2018 – 2021</div>
+            <div class="time-card-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius quidem nam ea cum atque veritatis iusto fuga accusamus sed ut!</div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="education">
-      <h2>Education</h2>
-      <div class="timeline">
-        <div class="time-graphic">
-          <div class="time-bullet"></div>
-          <div class="vertical-line"></div>
-        </div>
-        <div class="time-card">
-          <h3>Bachelor of Science - BSc(Hons)Computer Science <span class="time-card-where">at University of Mauritius</span></h3>
-          <div class="time-card-date">2018 – 2021</div>
-          <div class="time-card-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius quidem nam ea cum atque veritatis iusto fuga accusamus sed ut!</div>
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="contact-content">
-
-      </div>
-    </section>
+     </div>
+   </div>
+</section>
+    
+<section class="wrap-collabsible wrap-collabsible-section">
+  <input name="cont" id="cont" class="toggle" type="checkbox"> <label for="cont" class="lbl-toggle">Contact</label>
+  <div class="collapsible-content">
+     <div  id="contact" class="content-inner">
+       <div class="timeline">
+         
+    </div>
+  </div>
+</section>
+    
   </main>
   <footer class="footer">
     <div class="title">
